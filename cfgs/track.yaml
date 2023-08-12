@@ -1,4 +1,4 @@
-output_dir: null
+output_dir: "output"
 verbose: false
 seed: 666
 
@@ -14,7 +14,7 @@ data_root_dir: data
 
 # [False, 'debug', 'pretty']
 # compile video with: `ffmpeg -f image2 -framerate 15 -i %06d.jpg -vcodec libx264 -y movie.mp4 -vf scale=320:-1`
-write_images: False
+write_images: True
 # Maps are only visualized if write_images is True
 generate_attention_maps: False
 
