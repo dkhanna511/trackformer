@@ -1,11 +1,23 @@
 ### Commands to create the environment
 
 `pip install -r requirements.txt` 
-`pip install torch==1.5.1 torchvision==0.6.1`
+
+`pip install torch==1.5.1 torchvision==0.6.1` 
+
 `pip3 install -U 'git+https://github.com/timmeinhardt/cocoapi.git#subdirectory=PythonAPI'`
-`rm -rf dist/`    ### this removes the dist directory that is created when you run the setup.py file to install MultiHeadAttention in the next command. This wont let you be caught up in the issue (hopefully)
+
+
+### this removes the dist directory that is created when you run the setup.py file to install MultiHeadAttention in the next command. This wont let you be caught up in the issue (hopefully) 
+
+`rm -rf dist/ MultiScaleDeformableAttention.egg-info/`    
+
 `python src/trackformer/models/ops/setup.py build --build-base=src/trackformer/models/ops/ install` 
+
 `pip install --upgrade numpy`
+### Training command
+`python src/train.py with mot17 deformable multi_frame tracking output_dir=models_train/mot17_deformable_multi_frame_aug14`
+
+
 
 
 
